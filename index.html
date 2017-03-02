@@ -11,19 +11,20 @@
       $('button').click(function({
         var username = $('username').val();
         var usercolor = $('usercolor').val();
-        
-        $('h2').html("Welcome to our School" + username); 
-        
+        $('div').css('background-color',usercolor);
+        $('h2').html("Welcome to our School" + username);
+
       }))
     });
-    
   </script>
+  
   <style type="text/css">
-      .ticket {
-      background-color: "blue";
-      width:600px;
-      height:55px;
+     div {
+      background-color: blue ;
+      width: 600px;
+      height: 55px;
       
+      }
   </style>
 </head>
 
@@ -33,17 +34,18 @@
 
 
   <h3>Here we have all the courses ever offered and our teachers are gathered from all over the world to give you a diverse education. To apply you need an application ticket. Create it here!</h3>
-  <p>Enter your first name</p>
-  Name: <input type="text">
-  <br> Select a color: <input type="color">
-  <br> Age: <input type="number">
+  
+  Name: <input type="text" id = "username">
+  <br>
+  <br> Select a color: <input type="color" id = "usercolor" >
+  <br> <br> Age: <input type="number">
   <br>
   <br>
   <button> Print your Ticket </button>
 
 
-  <div class="ticket">
-    <h2> </h2>
+  <div>
+    <h2></h2>
   </div>
 </body>
 
