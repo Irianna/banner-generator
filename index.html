@@ -11,9 +11,10 @@
       $('button').click(function(){
         var username = $('#username').val();
         var usercolor = $('#usercolor').val();
+        var age = $('#age').val();
         $('#banner').css('background-color', usercolor);
         $("#ticket").html("Welcome to our School " + username);
-       
+        $('#bannertext').html(age + "is the perfect age to start considering us! See you on application day!");
 
       });
     });
@@ -43,7 +44,7 @@
 
   Name: <input type="text" id="username">
   <br><br> Select a color: <input type="color" id="usercolor">
-  <br><br> Age: <input type="number">
+  <br><br> Age: <input type="number" id = "bannertext">
   <br><br>
   <button> Print your Ticket </button>
 
