@@ -8,44 +8,49 @@
   <script>
     // custom JS/ jQuery
     $(function() {
-      $('button').click(function({
-        var username = $('username').val();
-        var usercolor = $('usercolor').val();
-        $('div').css('background-color',usercolor);
-        $('h2').html("Welcome to our School" + username);
+      $('button').click(function(){
+        var username = $('#username').val();
+        var usercolor = $('#usercolor').val();
+        $('#banner').css('background-color', usercolor);
+        $("#ticket").html("Welcome to our School " + username);
+       
 
-      }))
+      });
     });
   </script>
-  
+
   <style type="text/css">
-     div {
-      background-color: blue ;
+  
+    div {
+      background-color: white; 
       width: 600px;
       height: 55px;
-      
-      }
+      padding-top:10px; 
+      padding-bottom:10px; 
+      padding-left:350px;
+      padding-right:30px;
+       
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>Welcome to The World's Best College!</h1>
+  <h1>Welcome to The World's Best College</h1>
 
 
   <h3>Here we have all the courses ever offered and our teachers are gathered from all over the world to give you a diverse education. To apply you need an application ticket. Create it here!</h3>
-  
-  Name: <input type="text" id = "username">
-  <br>
-  <br> Select a color: <input type="color" id = "usercolor" >
-  <br> <br> Age: <input type="number">
-  <br>
-  <br>
+
+  Name: <input type="text" id="username">
+  <br><br> Select a color: <input type="color" id="usercolor">
+  <br><br> Age: <input type="number">
+  <br><br>
   <button> Print your Ticket </button>
 
-
-  <div>
-    <h2></h2>
+  <br><br>
+  <div id = "banner">
+    <h2 id = "ticket">Your info appears here!</h2>
+    
   </div>
 </body>
 
