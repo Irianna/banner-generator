@@ -13,8 +13,8 @@
         var usercolor = $('#usercolor').val();
         var age = $('#age').val();
         $('#banner').css('background-color', usercolor);
-        $("#ticket").html("Welcome to our School " + username);
-        $('#bannertext').html(age + "is the perfect age to start considering us! See you on application day!");
+        $("#ticket").html("Welcome to our School " + username + "!");
+        $("#bannertext").html(age + "is the perfect age to start considering us! See you on application day!");
 
       });
     });
@@ -27,10 +27,14 @@
       width: 600px;
       height: 55px;
       padding-top:10px; 
-      padding-bottom:10px; 
+      padding-bottom:50px; 
       padding-left:350px;
       padding-right:30px;
        
+    }
+    
+    p {
+      padding-left:25px;
     }
   </style>
 </head>
@@ -51,6 +55,7 @@
   <br><br>
   <div id = "banner">
     <h2 id = "ticket">Your info appears here!</h2>
+    <h3 id = "bannertext"> I hope you enjoy this application process! </h3>
     
   </div>
 </body>
